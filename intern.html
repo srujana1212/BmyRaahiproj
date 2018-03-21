@@ -173,6 +173,34 @@
   background-color: #555;
 }
 
+div.gallery {
+    margin: 5px;
+    border: 1px solid #ccc;
+    float: left;
+   width: 300px;
+    height: 300px;
+    
+
+}
+
+div.gallery:hover {
+    border: 2px solid #777;
+       -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
+
+}
+
+div.gallery img {
+    width: 300px;
+    height: 300px;
+}
+
+div.desc {
+    padding: 15px;
+    text-align: center;
+}
+
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="50">
@@ -193,7 +221,6 @@
         <li><a href="#myPage">HOME</a></li>
         <li><a href="#aboutme">ABOUT ME</a></li>
         <li><a href="#qualifications">QUALIFICATIONS</a></li>
-        <li><a href="#contact">CONTACT</a></li>
         
         <li class="dropdown">
           <a class="dropdown-toggle" data-toggle="dropdown" href="#">PROJECTS
@@ -205,6 +232,9 @@
           </ul>
         </li>
  <li><a href="#friends">FRIENDS</a></li>
+<li><a href="#interests">INTERESTS</a></li>
+<li><a href="#contact">CONTACT</a></li>
+        
        
         <li><a href="#"><span class="glyphicon glyphicon-search"></span></a></li>
       </ul>
@@ -404,7 +434,7 @@
 </div>
 
 
-<div id="ece projects" class="bg-1">
+<div id="ece projects" class="container text-center">
   <h3 class="text-center">ELECTRONICS PROJECTS</h3>
   <p class="text-center"><em>A learner of arduino,matlab and cadense</em></p>
   <br>
@@ -442,7 +472,7 @@
 </div>
 
 
-<div id="cse projects" class="container text-center">
+<div id="cse projects" class="bg-1">
   <h3 class="text-center">COMPUTERS PROJECTS</h3>
   <p class="text-center"><em>A learner of HTML,CSS,Bootstrap,C,Java,Javascript</em></p>
   <br>
@@ -480,6 +510,48 @@
 </div>
 
 
+
+<div id="friends" class="container text-center">
+  <h3 class="text-center">FRIENDS</h3>
+
+
+
+<div class="gallery">
+    <img src="they.jpg" alt="Trolltunga Norway" width="300" height="200">
+   <div class="desc">With cousins</div>
+</div>
+<div class="gallery">
+    <img src="3com.jpg" alt="Trolltunga Norway" width="300" height="200">
+  <div class="desc">The 3 idiots</div>
+</div>
+<div class="gallery">
+    <img src="mur.jpg" alt="Trolltunga Norway" width="300" height="200">
+  
+ <div class="desc">With the best senior</div>
+</div>
+<div class="gallery">
+    <img src="kfc.jpg" alt="Trolltunga Norway" width="300" height="200">
+  <div class="desc">The girl gang</div>
+</div>
+<div class="gallery">
+    <img src="fist.jpg" alt="Trolltunga Norway" width="300" height="200">
+  <div class="desc">The fist</div>
+</div>
+<div class="gallery">
+    <img src="we5.jpg" alt="Trolltunga Norway" width="300" height="200">
+  <div class="desc">We five</div>
+</div>
+<div class="gallery">
+    <img src="sco.jpg" alt="Trolltunga Norway" width="300" height="200">
+  <div class="desc">My school gang</div>
+</div>
+
+<div class="gallery">
+    <img src="him.jpg" alt="Trolltunga Norway" width="300" height="200">
+  <div class="desc">The agra tour</div>
+</div>
+
+</div>
 <script>
 // When the user scrolls down 20px from the top of the document, show the button
 window.onscroll = function() {scrollFunction()};
